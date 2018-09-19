@@ -1,41 +1,37 @@
-#executar pra gerar os arquivos do projeto
+### executar pra gerar os arquivos do projeto
 
-#Criar pagina para projeto
-* ProjetoFinal
-#Criar venv (executar comanto dentro da pasta ProjetoFinal)
-*	python -m venv venvProjetoFinal
-#Ativar venv
-*	E:\desenvolvimento\cursos\workspace\ProjetoFinal\venvProjetoFinal\Scripts\activate.bat
-*	E:\desenvolvimento\cursos\workspace\ProjetoFinal\venvProjetoFinal\Scripts\deactivate.bat
+## Criar pasta para projeto
+    ProjetoFinal
+## Criar venv (executar comanto dentro da pasta ProjetoFinal)
+	python -m venv venvProjetoFinal
+## Ativar venv
+	E:\desenvolvimento\cursos\workspace\ProjetoFinal\venvProjetoFinal\Scripts\activate.bat
+	E:\desenvolvimento\cursos\workspace\ProjetoFinal\venvProjetoFinal\Scripts\deactivate.bat
 
-#Atualizar pip na venv (executar comanto dentro da pasta ProjetoFinal)
-*	python -m pip install --upgrade pip
+## Atualizar pip na venv (executar comanto dentro da pasta ProjetoFinal)
+	python -m pip install --upgrade pip
 
-#Criar repositorio git (executar comanto dentro da pasta ProjetoFinal)
-*	git init
+## Criar repositorio git (executar comanto dentro da pasta ProjetoFinal)
+	git init
 
-#Criar dentro da pasta ProjetoFinal o arquivo .gitignore
-#Digitar no arquivo .gitignore
-*	venvProjetoFinal
+## Criar dentro da pasta ProjetoFinal o arquivo .gitignore
+# Digitar no arquivo .gitignore
+	venvProjetoFinal
 
-Instalar o django
+## Instalar o django
 	pip install django
 
-Instalar pylint
+## Instalar pylint
 	pip uninstall pylint
 	pip install -U pylint
+		
+## Verificar se os imports estao funcionando
+*	para corrigir tem que setar um compilador python
 	
-	
-	
-	
-	
-Verificar se os imports estao funcionando
-	para corrigir tem que setar um compilador python
-	
-Criar projeto django
+## Criar projeto django
 	django-admin startproject estacionamento .
 	
-alterações em  settings.py
+## alterações em  settings.py
 	LANGUAGE_CODE = 'pt-br'
 	
 	TIME_ZONE = 'America/Boa_Vista'
@@ -43,20 +39,20 @@ alterações em  settings.py
 	
 	ALLOWED_HOSTS = ['localhost',]
 
-Criar banco de dados
+## Criar banco de dados
 	python manage.py migrate
 	
-Rodar o projeito para testar se ta funcioando
+## Rodar o projeito para testar se ta funcioando
 	python manage.py runserver
 
 	
-Criar super usuário
+## Criar super usuário
 	python manage.py createsuperuser
 		
-Criar um app para nosso primeiro parte do programa
+## Criar um app para nosso primeiro parte do programa
 	python manage.py startapp core
 
-Registrar o app criado editar o arquivo estacionamento/settings.py
+## Registrar o app criado editar o arquivo estacionamento/settings.py
 	INSTALLED_APPS = [
 		'django.contrib.admin',
 		'django.contrib.auth',
@@ -81,7 +77,7 @@ Registrar o app criado editar o arquivo estacionamento/settings.py
 	TIME_INPUT_FORMATS = ('%H:%M:%S',)
 	
 	
-Criar classe Pessoa dentro do arquivo core/models.py
+## Criar classe Pessoa dentro do arquivo core/models.py
 
 	class Pessoa(models.Model):
 		nome = models.CharField(max_length=100)
@@ -98,28 +94,28 @@ Criar classe Pessoa dentro do arquivo core/models.py
 		cor = models.CharField(max_length=15)
 		observaces = models.TextField()
 
-validar e preparar  criancao das tabelas
+## validar e preparar  criancao das tabelas
 	python manage.py makemigrations
 
-implantar alteracoes do banco de dados
+## implantar alteracoes do banco de dados
 	python manage.py migrate
 
-adicionar nossas models ao admin (core/admin.py)
+## adicionar nossas models ao admin (core/admin.py)
 	from .models import Marca, Veiculo, Pessoa
 	admin.site.register(Marca)
 	admin.site.register(Veiculo)
 	admin.site.register(Pessoa)
 	
-Personalizar nossas models ao admin (core/admin.py)	
+## Personalizar nossas models ao admin (core/admin.py)	
 	
 	
-preparar templates dos app
+## preparar templates dos app
 	criar pastas
 		/core/templates/core
 		/core/templates/core/index.html
 		
 		
-preparar templates padroes
+## preparar templates padroes
 	TEMPLATES = [
 		{
 			'BACKEND': 'django.template.backends.django.DjangoTemplates',
