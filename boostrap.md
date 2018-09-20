@@ -4,6 +4,15 @@
 # Criar a pasta static
     ProjetoFinal\static\
 
+# Descompactada do bootstrap dentro da pasta static
+# Estrutura de pastas
+    ProjetoFinal
+        static
+            bootstrap
+                css
+                js
+
+
 # Alterar o arquivo settings.py
 
     STATIC_URL = '/static/'
@@ -15,10 +24,10 @@
     ]
 
 # Alterar o arquivo base.html 
-## endereço do arquivo
+## Endereço do arquivo
     ProjetoFinal\templates\base.html
 
-## alterações no arquivo
+## Alterações no arquivo base.html
 
     {% load static %}
     <!DOCTYPE html>
@@ -38,8 +47,8 @@
     </body>
     </html>
 
-# Nos arquivos que vão usar o template
-## o coteudo das paginas deve ficar dentro do block
+# Alterações nas páginas para usar o templat com o bootstrap
+## O coteúdo das paginas deve ficar dentro do block
     {% extends 'base.html' %}
 
     {% block main %}
@@ -48,3 +57,19 @@
     {% endblock  %}
 
 
+# Ferramenta para ajustar formes do bootstrap
+
+    https://django-bootstrap-form.readthedocs.io/en/latest/
+
+## Instalar
+    pip install django-bootstrap-form
+
+## Adicionar no arquivo requirements-dev.txt para subir para o produção
+    django-bootstrap-form
+
+## Adicionar no INSTALLED_APPS do arquivo settings.py
+    INSTALLED_APPS = (
+        ...
+        'bootstrapform',
+        ...
+    )
