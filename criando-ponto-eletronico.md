@@ -5,8 +5,6 @@
     git init
 
 ## Criar o arquivo .gitignore escrver  os aquivos e pastas que não devem ser versionados
-    .settings
-    .classpath
     target
 
 ## Adicionar e dar commit no repositorio local
@@ -28,9 +26,25 @@
 
 # Passo 3 : Baixar o projeto no eclipse
 ## Excluir o projeito para o caso de ja existir no eclipse. Apagando todas as pastas referente ao projeto
-## Dentro do workspace do eclipse  criar a pasta  ponto-eletronico
-## Adicionar o repositorio remoto
-git init
-git remote  add origin http://192.168.0.85:7990/scm/ponto/rep-ponto.git
-git pull origin master
+## No eclipse File >> Import >> Projects from Git >>
+###     Escolha a opção : Clone URL
+###     Location : URL : http://192.168.0.85:7990/scm/ponto/rep-ponto.git
+###     Os campos Host, Repository path, Protocolo  e port serão preenchido automaticamente de acordo com a URL informada
+###     Digite o usuário e a senha.
+###     Escolha o branche (master)
+###     Informe o diretorio workspace do eclipse e o nome da pasta do  projeito
+        C:\desenvolvimento\workspace\rep-ponto
+
+###     Informe o nome que deseja dar ao remote, vem com padrão origin
+        origin
+
+### Deixe marcado a opção "Import existing Eclipse projects"
+### Avance e finalize a importação
+
+### Após importar o projeito é necessário informar qual servidor de aplicação ele deve utilizar.
+### Para isso click na opção "Properties" do menu de contexto do projeto
+### Na propriedade Project Facets >> Rumtimes : Selecione o servidor de aplicação wildFly
+### Em seguinda aplique as alterações e feche a janela properties
+### Maven >> Update project
+
 
