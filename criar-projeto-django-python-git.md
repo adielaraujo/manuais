@@ -1,4 +1,10 @@
 ### executar pra gerar os arquivos do projeto
+#### sites:
+	https://tutorial.djangogirls.org/pt/template_extending/
+	https://docs.djangoproject.com/en/1.7/topics/templates/
+	https://docs.djangoproject.com/pt-br/2.1/topics/auth/default/
+	http://mussumipsum.com/
+
 
 ## Criar pasta para projeto
     ProjetoFinal
