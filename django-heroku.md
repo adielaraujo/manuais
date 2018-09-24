@@ -102,6 +102,7 @@ Remember to grab the address of the app in this point
 * git push heroku master --force
 
 ## Creating the data base
+## Caso seja necessário em casos de alterações no banco de dados 
 * heroku run python3 manage.py migrate
 
 ## Creating the Django admin user
