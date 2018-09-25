@@ -13,6 +13,7 @@
 
 ## Adicionar o repositorio remoto 
     git remote add origin http://192.168.0.85:7990/scm/ponto/rep-ponto.git
+    
 
 ## enviar os arquivos para o servidor
     git push -u origin master
