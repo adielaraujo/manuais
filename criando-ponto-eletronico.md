@@ -32,7 +32,8 @@
 ###     Location : URL : http://192.168.0.85:7990/scm/ponto/rep-ponto.git
 ###     Os campos Host, Repository path, Protocolo  e port serão preenchido automaticamente de acordo com a URL informada
 ###     Digite o usuário e a senha.
-###     Escolha o branche (master)
+###     Escolha os branches aos quais tem acesso
+###     Selecione o  branche inicial
 ###     Informe o diretorio workspace do eclipse e o nome da pasta do  projeito
         C:\desenvolvimento\workspace\rep-ponto
 
