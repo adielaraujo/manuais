@@ -1,6 +1,6 @@
-#GIT
+#       GIT
 
-###   Inicializando o git e puchando um projeito que ja existe
+###     Inicializando o git e puchando um projeito que ja existe
 *   Iniciando o git na pasta local 
     git init
 *   adicionando o remote ao git local "origin" é o nome do remote local
